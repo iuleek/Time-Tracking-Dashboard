@@ -1,0 +1,217 @@
+﻿
+body {
+    background-color: hsl(226, 43%, 10%);
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    width: 100%;
+    height: 100%;
+}
+h3 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-weight: 300;
+}
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+.nav-link {
+    padding: 0;
+}
+#main {
+    height: 96vh;  /*How to Give a Div Element 100% Height of the Browser Window*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main .container {
+    display: grid;
+    justify-content: center;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    grid-template-areas:
+            'profile work play study'
+            'profile exercise social selfcare';
+}
+.container {
+    justify-content: center;
+    align-items: center;
+}
+.hidden {
+    display: none;
+}
+
+.top-half img {
+    width: 30%;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin-bottom: 20%;
+}
+.profile {
+    grid-area: profile;
+    width: 240px;
+}
+.work {
+    grid-area: work;
+    width: 240px;
+}
+.play {
+    grid-area: play;
+    width: 240px;
+}
+.study {
+    grid-area: study;
+    width: 240px;
+}
+.exercise {
+    grid-area: exercise;
+    width: 240px;
+}
+.social {
+    grid-area: social;
+    width: 240px;
+}
+.selfcare {
+    grid-area: selfcare;
+    width: 240px;
+}
+
+
+.work .cover-img {
+    background-color: hsl(15, 100%, 70%);
+}
+
+.play .cover-img {
+    background-color: hsl(195, 74%, 62%)
+}
+
+.study .cover-img {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exercise .cover-img {
+    background-color: hsl(145, 58%, 55%);
+}
+
+.social .cover-img {
+    background-color: hsl(264, 64%, 52%);
+}
+
+.selfcare .cover-img {
+    background-color: hsl(43, 84%, 65%)
+}
+
+
+
+.workBody, .playBody, .studyBody, .exerciseBody, .selfcareBody, .socialBody {
+    border-radius: 10px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    position: relative;
+    height: 150px;
+    padding: 20px;
+    bottom: 10px;
+}
+    .workBody:hover,
+    .studyBody:hover,
+    .exerciseBody:hover,
+    .playBody:hover,
+    .selfcareBody:hover,
+    .socialBody:hover {
+        background-color: hsl(235, 45%, 61%);
+    }
+
+.top-half {
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 10px;
+    height: 350px;
+    padding: 25px 20px 10px;
+    position: relative;
+    top: 10px
+}
+.bottom-half {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    height: 130px;
+    padding: 20px;
+
+}
+.profile {
+    position: relative;
+    bottom: 10px;
+}
+.cover-img {
+    height: 70px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.top img {
+    padding-left: 120px;
+}
+.cover-img img {
+    height: 60px;
+    padding-right: 20px;
+    top: 50%;
+    transform: translateY(-10%);
+    right: -30px;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    text-align: center;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        line-height: 0.8rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    #main {
+        height: auto;
+        padding: 20px;
+    }
+
+    #main .container {
+        grid-template-areas:
+           'profile'
+            'work'
+            'play'
+            'study'
+            'exercise'
+            'social'
+            'selfcare';
+        }
+
+    .profile,
+    .work,
+    .play,
+    .study,
+    .exercise,
+    .social,
+    .selfcare {
+        width: 100%;
+    }
+}
+
